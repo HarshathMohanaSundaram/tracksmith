@@ -1,0 +1,12 @@
+<% content_for :title, "Editing time log" %>
+
+<h1>Editing time log</h1>
+
+<%= render "form", time_log: @time_log %>
+
+<br>
+
+<div>
+  <%= link_to "Show this time log", @time_log %> |
+  <%= link_to "Back to time logs", time_logs_path %>
+</div>

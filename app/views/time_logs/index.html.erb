@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Time logs" %>
+
+<h1>Time logs</h1>
+
+<div id="time_logs">
+  <% @time_logs.each do |time_log| %>
+    <%= render time_log %>
+    <p>
+      <%= link_to "Show this time log", time_log %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New time log", new_time_log_path %>

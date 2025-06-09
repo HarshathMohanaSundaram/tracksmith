@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  topic: MyString
+  theme: MyString
+  skill_set: MyString
+  estimatio: 1.5
+  xp: 1
+  completed: false
+  completed_at: 2025-06-09 21:44:30
+
+two:
+  user_id: 1
+  topic: MyString
+  theme: MyString
+  skill_set: MyString
+  estimatio: 1.5
+  xp: 1
+  completed: false
+  completed_at: 2025-06-09 21:44:30
