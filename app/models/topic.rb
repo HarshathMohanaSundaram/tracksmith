@@ -8,7 +8,7 @@ class Topic < ApplicationRecord
   validates :estimation, numericality: { greater_than_or_equal_to: 0 }
   validates :xp, numericality: { greater_than_or_equal_to: 0 }
 
-  vaildates :completed_at, presence: true, if: :completed?
+  validates :completed_at, presence: true, if: :completed?
 
   scope :completed, -> { where(completed: true) }
   scope :in_progress, -> { where(completed: false) }
